@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+
+<body>
+    <!-- <div> -->
+    <input type="text" placeholder="Enter text" style="margin-bottom: 3%;" id="input">
+    <button id="btn">Click Me! </button>
+    <p id="p">The text you have entered is: </p>
+
+    <!-- </div> -->
+</body>
+
+<style>
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<script>
+    const p = document.getElementById("p");
+    const input = document.getElementById("input")
+    const btn = document.getElementById("btn")
+    console.log(input.value)
+    btn.addEventListener("click", () => {
+        p.innerHTML = "The text you have entered is: " + input.value
+    })
+
+</script>
+
+</html>
